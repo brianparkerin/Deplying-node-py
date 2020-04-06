@@ -1,4 +1,4 @@
-# Deplying-node-py
+# Deploying-node-py
 ### Deploying any app on Node &amp; Python on Heroku Linux/Win
 
 
