@@ -1,0 +1,96 @@
+From src
+
+
+Microsoft Windows [Versión 10.0.18362.720]
+(c) 2019 Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\brian>cd desktop/underfix
+
+C:\Users\brian\Desktop\underfix>cd venv
+
+C:\Users\brian\Desktop\underfix\venv>cd scripts
+
+C:\Users\brian\Desktop\underfix\venv\Scripts>activate
+
+(venv) C:\Users\brian\Desktop\underfix\venv\Scripts>cd ..
+
+(venv) C:\Users\brian\Desktop\underfix\venv>cd ..
+
+(venv) C:\Users\brian\Desktop\underfix>cd src
+
+(venv) C:\Users\brian\Desktop\underfix\src>git init
+Reinitialized existing Git repository in C:/Users/brian/Desktop/underfix/src/.git/
+
+(venv) C:\Users\brian\Desktop\underfix\src>heroku create underfix
+Creating ⬢ underfix... done
+https://underfix.herokuapp.com/ | https://git.heroku.com/underfix.git
+
+(venv) C:\Users\brian\Desktop\underfix\src>heroku git:remote underfix
+set git remote heroku to https://git.heroku.com/underfix.git
+
+(venv) C:\Users\brian\Desktop\underfix\src>git push heroku master
+Enumerating objects: 29, done.
+Counting objects: 100% (29/29), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (25/25), done.
+Writing objects: 100% (29/29), 29.77 KiB | 448.00 KiB/s, done.
+Total 29 (delta 1), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(venv) C:\Users\brian\Desktop\underfix\src>git push -u origin master
+To https://github.com/brianparkerin/underfix.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/brianparkerin/underfix.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+(venv) C:\Users\brian\Desktop\underfix\src>cd ..
+
+(venv) C:\Users\brian\Desktop\underfix>git fetch origin master
+From https://github.com/brianparkerin/underfix
+ * branch            master     -> FETCH_HEAD
+
+(venv) C:\Users\brian\Desktop\underfix>git merge origin master
+merge: origin - not something we can merge
+
+(venv) C:\Users\brian\Desktop\underfix>git fetch origin master:tmp
+From https://github.com/brianparkerin/underfix
+ * [new branch]      master     -> tmp
+
+(venv) C:\Users\brian\Desktop\underfix>git rebase tmp
+warning: unable to rmdir 'src': Directory not empty
+First, rewinding head to replay your work on top of it...
+Applying: add new changeds
+
+(venv) C:\Users\brian\Desktop\underfix>git branch -D tmp
+Deleted branch tmp (was 9942ac1).
+
+(venv) C:\Users\brian\Desktop\underfix>git push --force origin master
+Enumerating objects: 1378, done.
+Counting objects: 100% (1378/1378), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (1362/1362), done.
+Writing objects: 100% (1377/1377), 4.75 MiB | 212.00 KiB/s, done.
+Total 1377 (delta 98), reused 0 (delta 0)
+remote: Resolving deltas: 100% (98/98), completed with 1 local object.
+To https://github.com/brianparkerin/underfix
+   9942ac1..9483001  master -> master
+
+(venv) C:\Users\brian\Desktop\underfix>
