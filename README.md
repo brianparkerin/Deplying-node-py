@@ -19,4 +19,4 @@ https://devcenter.heroku.com/articles/python-runtimes
 
 https://devcenter.heroku.com/categories/deployment
 
-Heroku CLI Commands
+https://devcenter.heroku.com/articles/heroku-cli-commands
