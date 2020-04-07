@@ -1,0 +1,9 @@
+H14 error con estatus 503 python
+
+https://devcenter.heroku.com/articles/dynos#dyno-configurations
+
+https://stackoverflow.com/questions/41804507/h14-error-in-heroku-no-web-processes-running
+
+https://devcenter.heroku.com/articles/error-codes#h14-no-web-dynos-running
+
+https://devcenter.heroku.com/articles/config-vars
